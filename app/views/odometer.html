@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Protoyping Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="/start" class="govuk-back-link">Back</a>
+
+    <h1 class="govuk-heading-xl">
+        <span class="govuk-caption-xl">Change test record</span>
+        Odometer reading</h1>
+
+<p>Current odometer reading: 97,000 km</p>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="odometer">
+          New odometer reading value
+        </label>
+        <span id="odometer-hint" class="govuk-hint">
+          E.g. 1000
+        </span>
+        <input class="govuk-input govuk-input--width-10" id="odometer" name="odometer" type="text">
+      </div>
+
+      <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <span class="govuk-body">
+      New odometer reading unit
+    </span>
+    <div class="govuk-radios govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" type="radio" value="kilometers">
+        <label class="govuk-label govuk-radios__label">
+          Kilometers
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" type="radio" value="miles">
+        <label class="govuk-label govuk-radios__label">
+          Miles
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+      <a href="/annual" class="govuk-button"> Submit </a>
+
+
+
+
+{% endblock %}

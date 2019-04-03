@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Protoyping Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <a href="/start" class="govuk-back-link">Back</a>
+      <h1 class="govuk-heading-xl"> Find vehicle </h1>
+
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="vrm">
+          What is the vehicle's identification number or registration mark?
+        </label>
+        <span id="vrm-hint" class="govuk-hint">
+          E.g. AB12 CDE
+        </span>
+        <input class="govuk-input govuk-input--width-10" id="vrm" name="vrm" type="text">
+      </div>
+
+      <a href="/history" class="govuk-button"> Search </a>
+
+{% endblock %}

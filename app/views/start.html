@@ -1,0 +1,24 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Protoyping Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <h1 class="govuk-heading-xl"> Vehicle Testing Management </h1>
+
+      <a href="/vsa" class="govuk-heading-m"> VSA activity </a>
+      <p> Search for a vehicle tester to view their recent activity including ATFs visited and tests submitted. </p>
+
+      <a href="/test" class="govuk-heading-m"> Test records </a>
+      <p> View and change a vehicle’s test record, issue or replace test certificates and documents. </p>
+
+      <a href="/vehicle" class="govuk-heading-m"> Vehicle technical records </a>
+      <p> Update vehicle technical records, create new records or archive old ones. </p>
+
+
+{% endblock %}
